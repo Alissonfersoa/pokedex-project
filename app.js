@@ -4,7 +4,7 @@
 const getPokemonUrl = id => `https://pokeapi.co/api/v2/pokemon/${id}`
 
 //gera o array para capturar os pokemons
-const generatePokemonsPromises = () => Array(150).fill().map((_, index) => 
+const generatePokemonsPromises = () => Array(809).fill().map((_, index) => 
     //função fetch para gerar um json com as informações e atributos de cada pokemon
     fetch(getPokemonUrl(index + 1)).then(response => response.json()))
 
