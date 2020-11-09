@@ -17,10 +17,10 @@ const generateHTML = pokemons => pokemons.reduce((accumulator, { name, id, types
     //gerador de li para leitura do HTML
     //função src = utiliza uma API para buscar a imagem do pokemon
     accumulator += `
-        <li class="card ${elementTypes[0]}">
+        <li class="card">
         <img class="card-image" alt="${name}" src="https://pokeres.bastionbot.org/images/pokemon/${id}.png" "/> 
             <h2 class="card-title">${id}. ${name}</h2>
-            <p class="card-subtitle">Type: ${elementTypes.join(' | ')}</p>
+            <p class="card-subtitle ${elementTypes[0]}">Type: ${elementTypes.join(' | ')}</p>
         </li>
         `
     return accumulator
