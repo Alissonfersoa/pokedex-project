@@ -4,7 +4,8 @@
 const getPokemonUrl = id => `https://pokeapi.co/api/v2/pokemon/${id}`
 
 //gera o array para capturar os pokemons
-const generatePokemonsPromises = () => Array(809).fill().map((_, index) => 
+//const generatePokemonsPromises = () => Array(809).fill().map((_, index) =>
+const generatePokemonsPromises = () => Array(50).fill().map((_, index) => 
     //função fetch para gerar um json com as informações e atributos de cada pokemon
     fetch(getPokemonUrl(index + 1)).then(response => response.json()))
 
@@ -19,7 +20,7 @@ const generateHTML = pokemons => pokemons.reduce((accumulator, { name, id, types
         <li class="card ${elementTypes[0]}">
         <img class="card-image" alt="${name}" src="https://pokeres.bastionbot.org/images/pokemon/${id}.png" "/> 
             <h2 class="card-title">${id}. ${name}</h2>
-            <p class="card-subtitle">${elementTypes.join(' | ')}</p>
+            <p class="card-subtitle">Type: ${elementTypes.join(' | ')}</p>
         </li>
         `
     return accumulator
