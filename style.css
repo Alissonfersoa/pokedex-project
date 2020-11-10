@@ -160,6 +160,12 @@ h1 {
 	position: relative;
 	z-index: 2;
 }
+.type-image{
+	height: 20px;
+	vertical-align: middle;
+	margin-left: 8px;
+	margin-right: 8px;
+}
 
 @keyframes bounce {
 
