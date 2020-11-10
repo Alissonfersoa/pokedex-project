@@ -1,7 +1,7 @@
 body {
-	background: #EFEFBB;
-	background: linear-gradient(to right, rgb(197, 230, 236), rgb(239, 187, 230));
-	color: white;
+	background: #EEF3F7;
+	/*background: linear-gradient(to right, rgb(197, 230, 236), rgb(239, 187, 230));*/
+	color: #666;
 	margin: 0;
 	font-family: rubik;
 }
@@ -33,7 +33,7 @@ h1 {
 	position: relative;
 }
 
-.card::after {
+/*.card::after {
 	content: "";
   display: block;
   width: 50%;
@@ -44,93 +44,108 @@ h1 {
   position: absolute;
   top: 15%;
   left: 25%;
-}
+}*/
 
 .steel {
-	background-color: #f8f8f8;
+	background-color: #9393B3;
 }
 
 .fire{
-	background-color: #ffbebe;
+	background-color: #F08030;
 }
 
 .grass {
-	background-color: #f8f8f8;
+	background-color: #48D0B0;
 }
 
 .electric {
-	background-color: #f8f8f8;
+	background-color: #FFCE4B;
 }
 
-.water, .ice {
-	background-color: #f8f8f8;
+.water{
+	background-color: #6890F0;
+}
+
+.ice {
+	background-color: #98D8D8;
 }
 
 .ground {
-	background-color: #f8f8f8;
+	background-color: #E0C068;
 }
 
 .rock {
-	background-color: #f8f8f8;
+	background-color: #B8A038;
 }
 
 .fairy {
-	background-color: #f8f8f8;
+	background-color: #EE99AC;
 }
 
 .poison {
-	background-color: #f8f8f8;
+	background-color: #A040A0;
 }
 
 .bug {
-	background-color: #f8f8f8;
+	background-color: #A8B820;
 }
 
 .dragon {
-	background-color: #f8f8f8;
+	background-color: #7038F8;
 }
 .ghost {
-	background-color: #f8f8f8;
+	background-color: #7C538C;
 }
 .psychic {
-	background-color: #f8f8f8;
+	background-color: #F85888;
 }
 
 .flying {
-	background-color: #f8f8f8;
+	background-color: #A890F0;
 }
 
 .fighting {
-	background-color: #f8f8f8;
+	background-color: #C03028;
 }
 .dark {
-	background-color: #f8f8f8;
+	background-color: #5E4C4C;
 }
 
 .normal {
-	background-color: #f8f8f8;
+	background-color: #A8A878;
 }
 
 .card:hover {
 	animation: bounce 0.7s linear;
-	background-color: #e8f3ff;
+	background-color: #E8F3FF;
+	border: 1px solid #D2E7FD;
 }
 
 .card-title {
 	text-transform: capitalize;
 	margin-bottom: 0px;
 	font-size: 32px;
+	color: #666;
 	font-weight: normal;
 	position: relative;
 	z-index: 2;
 }
+/*.card-title-id{
+	/*margin-bottom: .5rem;
+	line-height: 1.2;
+	color: #666;
+    font-size: 20px;
+	font-weight: 800;
+	margin-left: 10px;
+}
+*/
 
 .card-subtitle {
 	margin-top: 10px;
 	margin-left: auto;
 	margin-right: auto;
 	width: 200px;
-	color: #666;
+	color: #f8f8f8;
 	padding: 5px 0;
 	/*background: #EFEFBB;*/
 	border-radius: 25px;
@@ -147,6 +162,7 @@ h1 {
 }
 
 @keyframes bounce {
+
 	20% {
 			transform: translateY(-6px);
 	}
