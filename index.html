@@ -12,9 +12,50 @@
 
   <div class="container">
     <h1>Pokédex</h1>
+    <form class="pokedex-control">
+      <div class="form-control">
+        <label for="filter-name">Name:</label>
+        <input class="search-input" type="text" id="filter-name">
+      </div>
+      <div class="form-control">
+        <label for="filter-type">Type:</label>
+        <select class="filter-input" id="filter-type">
+          <option value>All</option>
+          <option>Normal</option>
+          <option>Fighting</option>
+          <option>Flying</option>
+          <option>Poison</option>
+          <option>Ground</option>
+          <option>Rock</option>
+          <option>Bug</option>
+          <option>Ghost</option>
+          <option>Steel</option>
+          <option>Fire</option>
+          <option>Water</option>
+          <option>Grass</option>
+          <option>Eletric</option>
+          <option>Psychic</option>
+          <option>Ice</option>
+          <option>Dragon</option>
+          <option>Dark</option>
+          <option>Fairy</option>
+        </select>
+      </div>
+      <div class="form-control">
+        <label for="sort">Sort:</label>
+          <select class="filter-input" id="sort-type">
+            <option>Lowest Number (First)</option>
+            <option>Highest Number (First)</option>
+            <option>A-Z</option>
+            <option>Z-A</option>
+          </select>
+      </div>
+    </form>
     <ul data-js="pokedex" class="pokedex"></ul>
   </div>
-  
+
+
+
   <script src="./app.js"></script>
 </body>
 <footer>
