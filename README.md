@@ -10,3 +10,4 @@ Requisitos:
 - Criar campo para filtro de pokemon por número
 - Criar card quando clicado no pokemon, aparecer o detalhamento em tela cheia
 - Criar botão de voltar a tela principal
+- Criar icones em PNG dos tipos de pokemon
