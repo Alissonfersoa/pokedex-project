@@ -2,6 +2,8 @@
 
 //referencia as APIs utilizadas
 const getPokemonUrl = id => `https://pokeapi.co/api/v2/pokemon/${id}`
+const searchBar = document.getElementById('searchBar');
+
 
 //gera o array para capturar os pokemons
 //const generatePokemonsPromises = () => Array(809).fill().map((_, index) =>
